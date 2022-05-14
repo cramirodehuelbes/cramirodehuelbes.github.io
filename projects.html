@@ -27,15 +27,16 @@
 					<nav>
 						<h2 style="text-align: center;"><a href="#Software">Software</a></h2>
 						<ul>
-							<li><a href="#platfrogs">Frog-Themed Self-Generating Platformer Game</a></li>
+							<li><a href="#platfrogs">Self-Generating Platformer Game</a></li>
 							<li><a href="#trees">Huffman Coding and Tic-Tac-Toe Algorithms</a></li>
+							<li><a href="#modem">Acoustic Modem Receiver</a></li>
                             <li><a href="#streaming">Streaming Service Data Scraper</a></li>
 						</ul>
 
                         <h2 style="text-align: center;"><a href="#Electrical">Electrical</a></h2>
 						<ul>
 							<li><a href="#baristabot">BaristaBot</a></li>
-							<li><a href="#isim1">ISIM thing</a></li>
+							<li><a href="#circuits">Current-Mirror Differential Amplifier</a></li>
 						</ul>
 
 						<h2 style="text-align: center;"><a href="#Research">Research</a></h2>
@@ -47,7 +48,7 @@
 						<h2 style="text-align: center;"><a href="#Misc">Misc</a></h2>
 						<ul>
                             <li><a href="#skatemate">SkateMate</a></li> 
-							<li><a href="#hopper">Hopper</a></li> 
+							<li><a href="#hopper">Bio-Inspired Hopper</a></li> 
                             <li><a href="#ocr">PCA for Optical Character Recognition</a></li> 
                         </ul>
 					</nav>
@@ -62,9 +63,7 @@
 				<section id="Software" class="wrapper style1 fade-up">
 					<div class="inner">
 						<h2>Software</h2>
-						<div class="features">
-
-							<!-- PlatFrogs -->
+						<div class="features"><!-- PlatFrogs -->
                             <section id="platfrogs" style="width: 100%;">
                                 <span class="icon solid major fa-gamepad"></span>
                                 <h3>Frog-themed Self-Generating Platformer Game</h3>
@@ -114,6 +113,25 @@
 
 							<hr>
 
+							<!-- Acoustic Modem -->
+							<section id="modem" style="width: 100%;">
+                                <span class="icon solid major fa-broadcast-tower"></span>
+                                <h3>Creating a Receiver for an Acoustic Modem</h3>
+                                    <span>
+                                       In this project, we implemented a receiver for an acoustic modem. The program takes strings, converts 
+									   them to bits, and transmits them using a high frequency cosine wave that our receiver then decodes and filters 
+									   in order to get the original message. We used MATLAB to implement the receiver, and created graphs of both the
+									   transmitted and received signals in the time and frequency domains.
+                                    </span>
+                                <br>
+                                <br>
+                                <ul class="actions">
+                                    <li><a href="documents/modem.pdf" target="_blank" rel="noopener noreferrer" class="button">Link to Paper</a>&emsp; <a href="https://github.com/lila-smith/acoustic-modem" target="_blank" rel="noopener noreferrer" position="relative" class="button">GitHub Repo</a></li>
+                                </ul>
+                            </section>
+
+							<hr>
+
 							<!-- Streaming Services -->
 							<section id="streaming" style="width: 100%;">
 								<span class="icon solid major fa-file-video"></span> 
@@ -130,7 +148,7 @@
 								<br>
 								<br>
 								<ul class="actions">
-									<li> <a href="https://github.com/olincollege/superior-streaming-service" target="_blank" rel="noopener noreferrer" position="relative" class="button">GitHub Repo</a> &emsp; <a href="https://github.com/olincollege/superior-streaming-service/blob/main/superior-movie-service.ipynb" target="_blank" rel="noopener noreferrer" position="relative" class="button">Link to Report</a> </li>
+									<li>  <a href="https://github.com/olincollege/superior-streaming-service/blob/main/superior-movie-service.ipynb" target="_blank" rel="noopener noreferrer" position="relative" class="button">Link to Paper</a> &emsp; <a href="https://github.com/olincollege/superior-streaming-service" target="_blank" rel="noopener noreferrer" position="relative" class="button">GitHub Repo</a></li>
 								</ul>
 							</section>
 						</div>
@@ -169,13 +187,24 @@
 
 							<hr>
 
-							<!-- ISIM -->
-							<section id="isim" style="width: 100%;">
-								<span class="icon solid major fa-utensils"></span>
-								<h3>ISIM (WIP)</h3>
+							<!-- Circuits -->
+							<section id="circuits" style="width: 100%;">
+								<span class="icon solid major fa-tachometer-alt"></span>
+								<h3>Current Mirror Differential Amplifier Analysis</h3>
 									<span>
-										ISIM placeholder
+										Through a series of three experiments, we explored the characteristics of a current mirror differential 
+										amplifier circuit and compared them to a simple differential amplifier. The first experiment explored the
+										voltage-transfer circuit characteristics with different values of inverting input. In the second experiment, we extracted
+										the incremental transconductance, output resistance, and gain by sweeping the noninverting input around the
+										inverting input in fine increments. Finally, in the third experiment we configrued the amplifier as a unity-gain
+										follower with a 1nF capacitor between the amplifier output and ground. We then tested this circuit with both a small
+										and large-amplitude wave as the input, and measured the output and gain for both step types.
 									</span>
+									<br>
+									<br>
+									<ul class="actions">
+										<li><a href="documents/diffamp.pdf" target="_blank" rel="noopener noreferrer" class="button">Link to Paper</a></li>
+									</ul>
 							</section>
 						</div>
 				</section>
