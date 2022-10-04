@@ -27,8 +27,8 @@
 					<nav>
 						<h2 style="text-align: center;"><a href="#Software">Software</a></h2>
 						<ul>
-							<li><a href="#platfrogs">Self-Generating Platformer Game</a></li>
-							<li><a href="#trees">Huffman Coding and Tic-Tac-Toe Algorithms</a></li>
+							<li><a href="#platfrogs">Self-Generating Game</a></li>
+							<li><a href="#trees">Huffman Coding Algorithm</a></li>
 							<li><a href="#modem">Acoustic Modem Receiver</a></li>
                             <li><a href="#streaming">Streaming Service Data Scraper</a></li>
 						</ul>
@@ -48,8 +48,8 @@
 						<h2 style="text-align: center;"><a href="#Misc">Misc</a></h2>
 						<ul>
                             <li><a href="#skatemate">SkateMate</a></li> 
+							<li><a href="#ocr">Optical Character Recognition</a></li> 
 							<li><a href="#hopper">Bio-Inspired Hopper</a></li> 
-                            <li><a href="#ocr">PCA for Optical Character Recognition</a></li> 
                         </ul>
 					</nav>
 				</div>
@@ -91,18 +91,17 @@
 							<!-- Huffman codes -->
                             <section id="trees" style="width: 100%;">
                                 <span class="icon solid major fa-keyboard"></span>
-                                <h3>Huffman Encoding and Tic-Tac-Toe Algorithms</h3>
+                                <h3>Huffman Coding Algorithms</h3>
                                     <span>
-                                        For our Discrete Mathematics course, my team members and I did an exploration on both canonical and standard
-                                        Huffman encoding, as well as game theory tree algorithms for tic-tac-toe. Huffman coding is a type of prefix
-                                        code that uses binary trees in order to efficiently encode messages through lossless data compression. Prefix codes (also
-                                        known as prefix-free binary codes) have the property that no whole codeword is the prefix for any
-                                        other codeword. This enables unambiguous parsing of a variable-length code.
+                                        My team did an exploration on both canonical and standard Huffman encoding, as well as game theory tree algorithms for tic-tac-toe. 
+										Huffman coding is a type of prefix code that uses binary trees in order to efficiently encode messages through lossless data compression. 
+										Prefix codes (also known as prefix-free binary codes) have the property that no whole codeword is the prefix for any
+                                        other codeword. This enables unambiguous parsing of a variable-length code, and was my main focus in the research project.
                                         <br><br>
-                                        We wrote this paper as a way to understand the applications of trees more deeply than what was taught in class, and 
+                                        We wrote this paper as a way to more deeply understand the applications of trees, and 
                                         ended up not only explaining but also implementing a working Huffman-encoding program in Python. The paper also explores 
                                         the minimax algorithm for tic-tac-toe and the beginnings of how to implement a function that would recursively 
-                                        generate the tic-tac-toe game tree. 
+                                        generate the tic-tac-toe game tree, however this was mostly taken on by a different section of the team. 
                                         <br><br>
                                         <ul class="actions">
                                             <li><a href="./documents/trees.pdf" target="_blank" rel="noopener noreferrer" class="button">See paper</a></li>
@@ -116,7 +115,7 @@
 							<!-- Acoustic Modem -->
 							<section id="modem" style="width: 100%;">
                                 <span class="icon solid major fa-broadcast-tower"></span>
-                                <h3>Creating a Receiver for an Acoustic Modem</h3>
+                                <h3>Acoustic Modem Receiver</h3>
                                     <span>
                                        In this project, we implemented a receiver for an acoustic modem. The program takes strings, converts 
 									   them to bits, and transmits them using a high frequency cosine wave that our receiver then decodes and filters 
@@ -143,7 +142,7 @@
 										streaming services and considered their price, the number of movies they had in a certain genre, and the ratings that
 										the movies in that genre have. That way, our results are customizable to peoples' preferences and can be applied to
 										a wide audience. We got our data from the WatchMode API, which had many limitations, but it was still helpful for 
-										creating code that could apply to larger, more accurate datasets.
+										creating code that could scale to larger, more accurate datasets.
 									</span>
 								<br>
 								<br>
@@ -219,10 +218,10 @@
 							<!-- Lead ACU -->
 							<section id="acu" style="width: 100%;">
 								<span class="icon solid major fa-satellite-dish"></span>
-								<h3>ACU</h3>
+								<h3>Antenna Control Unit (ACU)</h3>
 								<h4>Project Lead</h4>
 									<span>
-										The antenna control unit (ACU) was originally a senior capstone project that was taken in by the OSSTP group after they graduated.
+										The ACU was originally a senior capstone project that was taken in by the OSSTP group after they graduated.
 										My team is now further developing this antenna to track satellites, demodulate their signals, and allow for remote control through
 										a user interface. Unfortunately there is not much more I can say about this due to confidentiality agreements.<br>
 									</span>
@@ -276,23 +275,6 @@
 
                             <hr>
 
-							<!-- Hopper -->
-							<section id="hopper" style="width: 100%;">
-								<span class="icon solid major fa-bug"></span>
-								<h3>Bio-Inspired Mechanical Hopper</h3>
-								<h4>Bufflea the Vampire Slayer</h4>
-									<span>
-										The hopper is a bio-inspired mechanical design project in which we went out into nature and found hopping
-										animals whose jumping mechanisms to mimic as inspiration for a hopping machine. My project was inspired by
-										a flea's, which is one of the animals with the largest jump in relation to its size. Fleas jump by compressing
-										an elastic pad made of a protein called resilin, which essentially acts like a spring to propel their bodies
-										into the air. I mimicked this by designing a flea-esque body and using a spring between the "thigh" and "calf"
-										that would be compressed in the starting position and would eventually launch the hopper into the air. The trigger
-										mechanism comprised of a suction cup attached to the hopper that would keep it stuck to the ground in the compressed
-										position for a few seconds, before unsticking and allowing the hopper to release all of the energy stored in the spring.
-									</span>
-							</section>
-
 							<!-- Handwriting Recognition -->
 							<section id="ocr" style="width: 100%;">
 								<span class="icon solid major fa-text-height"></span>
@@ -310,7 +292,23 @@
 								<br>
 								<br>
                                 <a href="./documents/ocr.pdf" target="_blank" rel="noopener noreferrer" class="button">Link to Paper</a></li>
-
+							
+							</section>
+							<!-- Hopper -->
+							<section id="hopper" style="width: 100%;">
+								<span class="icon solid major fa-bug"></span>
+								<h3>Bio-Inspired Mechanical Hopper</h3>
+								<h4>Bufflea the Vampire Slayer</h4>
+									<span>
+										The hopper is a bio-inspired mechanical design project in which we went out into nature and found hopping
+										animals whose jumping mechanisms to mimic as inspiration for a hopping machine. My project was inspired by
+										a flea's, which is one of the animals with the largest jump in relation to its size. Fleas jump by compressing
+										an elastic pad made of a protein called resilin, which essentially acts like a spring to propel their bodies
+										into the air. I mimicked this by designing a flea-esque body and using a spring between the "thigh" and "calf"
+										that would be compressed in the starting position and would eventually launch the hopper into the air. The trigger
+										mechanism comprised of a suction cup attached to the hopper that would keep it stuck to the ground in the compressed
+										position for a few seconds, before unsticking and allowing the hopper to release all of the energy stored in the spring. <br><br>
+									</span>
 							</section>
 						</div>
 				</section>
